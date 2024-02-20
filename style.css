@@ -1,0 +1,282 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.top-bar{
+  width: 80%;
+  height: 4rem;
+  background-color: #eee;
+  margin-bottom: 20px;
+  display: flex;
+  padding: 0px 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar{
+  width: 30%;
+  border-radius: 5px;
+  background-color: #eee;
+  margin-left: 20px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.head{
+  background-color: #c0b9b9;
+  border-radius: 3px;
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.foot{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+  padding: 10px 0px;
+  border-top: 1px solid #333;
+}
+
+
+.fa-envelope{
+  color: #1a5593;
+  margin-right: 10px;
+}
+
+.fa-phone{
+  color: #1a5593;
+  margin-right: 10px;
+}
+
+.container{
+  width: 80%;
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#root{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 20px;
+}
+
+.box{
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.img-box{
+  width: 50%;
+  height: 170px;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+}
+
+.left{
+  width: 100px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 60px;
+}
+
+.cart-container {
+  position: static;
+  margin-top: 0px;
+  margin-left: 900px;
+  z-index: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.cart {
+  background-color: #e6e6e6;
+  color: #fff;
+  padding: 10px;
+  border: 2px solid #ccced1;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  margin-top: 10px;
+  margin-right: 0px;
+  align-items: right;
+}
+
+.cart i {
+  margin-right: 5px; 
+  color:#1a5593;
+}
+
+.cart p {
+  margin: 0px;
+  color:#1a5593
+}
+
+.cart-item {
+  display: inline-block;
+  margin-right: 0px; 
+}
+
+img{
+  max-width: 100%;
+  align-items: center;
+
+}
+.total{
+  margin-top: 500px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+}
+
+button{
+  width: 80%;
+  height: 30px;
+  background-color: #83a7c9;
+  border: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .3s;
+  box-shadow: 0 5px #b5b5b5;
+}
+
+button:hover {
+  background-color: #2f6aa2;
+}
+
+button:active {
+  background-color: #ff0000;
+  box-shadow: 0 5px #8a8a8a;
+  transform: translateY(4px);
+}
+
+.cart-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #d9d9d9;
+  border-bottom: 1px solid #ccc;
+  border-radius: 3px;
+  margin: 10px 10px;
+  
+}
+
+.row-img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid #2a4084;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rowimg{
+  max-width: 43px;
+  max-height: 43px;
+  border-radius: 50%;
+}
+
+.fa-trash:hover{
+  cursor: pointer;
+  color: #ff0000;
+}
+
+/* Payment Style */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3f3f3;
+  color: blue;
+}
+.checkout-container {
+  width: 60%;/* Increase the max-width value to make the container larger */
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  animation: slide-up 0.5s ease;
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.payment-form label,
+.payment-form input {
+  display: block;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.payment-form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#pay-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#pay-btn:hover {
+  background-color: #0056b3;
+}
+
+#payment-status {
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+.error-message {
+  display: none;
+  color: red;
+  margin-top: 10px;
+}
